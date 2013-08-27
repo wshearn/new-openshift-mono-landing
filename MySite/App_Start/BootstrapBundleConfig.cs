@@ -19,6 +19,7 @@ namespace BootstrapSupport
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/bootstrap/bootstrap.css",
+				"~/Content/bootstrap/bootstrap-theme.css",
                 "~/Content/body.css",
                 "~/Content/bootstrap-mvc-validation.css"
                 ));

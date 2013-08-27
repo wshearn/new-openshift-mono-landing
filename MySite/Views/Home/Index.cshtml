@@ -14,34 +14,42 @@
 }
 
 <h3>We suggest the following:</h3>
-<div class="row">
-    <div class="col-lg-4">
-        <h2>Getting Started</h2>
-        <p>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        </p>
-        <a class="btn btn-primary" href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-    </div>
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="#aboutMVC" data-toggle="tab">About MVC</a></li>
+  <li><a href="#gettingStarted" data-toggle="tab">Getting Started</a></li>
+  <li><a href="#community" data-toggle="tab">Learn about the community</a></li>
+</ul>
 
-    <div class="col-lg-4">
-        <h2>Setting up your development environment</h2>
-        <p>
-        MonoDevelop 4 works with git and ssh making writing your awesome application
-        extremely easy.
-        </p>
-        @Html.ActionLink("Learn more…", "GettingStarted", "Home", null, new {@class="btn btn-primary"})
-    </div>
-    
-    <div class="col-lg-4">
-    	<h2>Get involved with the OpenShift community</h2>
-    	<p>
-    	The OpenShift community is filled with a wealth of knowledge that can make working
-    	with OpenShift a very enjoyable experience.
-    	</p>
-    	@Html.ActionLink("Learn More...", "Community", "Home", null, new {@class="btn btn-primary"})
-    </div>
+<br />
+
+<div class="tab-content">
+	<div class="tab-pane active" id="aboutMVC">
+	    <p>
+	    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+	    enables a clean separation of concerns and that gives you full control over markup
+	    for enjoyable, agile development. ASP.NET MVC includes many features that enable
+	    fast, TDD-friendly development for creating sophisticated applications that use
+	    the latest web standards.
+	    </p>
+	    <br />
+	    <a class="btn btn-danger pull-right" href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
+	</div>
+
+	<div class="tab-pane" id="gettingStarted">
+	    <p>
+	    MonoDevelop 4 works with git and ssh making writing your awesome application
+	    extremely easy.
+	    </p>
+	    <br />
+	    @Html.ActionLink("Learn more…", "GettingStarted", "Home", null, new {@class="btn btn-warning pull-right"})
+	</div>
+
+	<div class="tab-pane" id="community">
+	    <p>
+		The OpenShift community is filled with a wealth of knowledge that can make working
+		with OpenShift a very enjoyable experience.
+		</p>
+		<br />
+		@Html.ActionLink("Learn More...", "Community", "Home", null, new {@class="btn btn-success pull-right"})
+	</div>
 </div>

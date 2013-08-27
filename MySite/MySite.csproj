@@ -161,9 +161,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
+    <Content Include="Images\GettingStarted\monodevelop-git.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
+    <Folder Include="Images\GettingStarted\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
